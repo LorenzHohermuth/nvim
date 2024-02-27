@@ -1,4 +1,4 @@
- function My_on_attach(bufnr)
+local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
 
   local function opts(desc)
@@ -12,3 +12,13 @@
   vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent,        opts('Up'))
   vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
 end
+
+
+require("nvim-tree").setup {
+  on_attach = my_on_attach,
+    actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
+}

@@ -275,9 +275,6 @@ require('lazy').setup({
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
-      require("nvim-tree").setup {
-        on_attach = My_on_attach,
-      }
     end,
   },
 
