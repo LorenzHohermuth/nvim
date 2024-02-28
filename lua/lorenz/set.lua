@@ -52,3 +52,7 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+vim.o.errorbells = false
+vim.o.visualbell = true
+vim.o.timeoutlen = 500

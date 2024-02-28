@@ -197,19 +197,9 @@ require('lazy').setup({
     dependencies = { "nvim-lua/plenary.nvim" }
   },
 
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled = true,
-        theme = 'onedark',
-        component_separators = '|',
-        section_separators = '',
-      },
-    },
-  },
+  -- Set lualine as statusline
+  'nvim-lualine/lualine.nvim',
+  -- See `:help lualine.txt`
 
   {
     -- Add indentation guides even on blank lines
