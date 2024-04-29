@@ -79,6 +79,9 @@ require('lazy').setup({
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
+  --templ
+  'joerdav/templ.vim',
+
   -- vim font
   'ryanoasis/vim-devicons',
 
